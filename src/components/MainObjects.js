@@ -9,7 +9,7 @@ import list from "../assets/icons/list.svg";
 import imageHand from "../assets/images/image-hand.png";
 import imageGear from "../assets/images/image-gear.jpeg";
 
-// styles
+// Styles
 import styles from "./MainObjects.module.css";
 
 const MainObjects = () => {
