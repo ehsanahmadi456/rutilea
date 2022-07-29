@@ -1,0 +1,132 @@
+.container {
+  padding: 0 24px;
+  background: #f6f7fb;
+  display: flex;
+  flex-direction: column !important;
+}
+
+.container .filter {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.container .filter .left {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  color: #111;
+}
+
+.container .filter .left p {
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.container .filter .left img {
+  transform: rotate(90deg);
+}
+
+.container .filter .right {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+}
+
+.container .filter .right p {
+  margin: 0 8px 0 0;
+}
+
+.container .filter .right img {
+  transform: rotate(90deg);
+  opacity: 0.5;
+  width: 12px;
+  height: 12px;
+}
+
+.handList,
+.gearList {
+  display: flex;
+  flex-direction: column;
+}
+
+.handList h2,
+.gearList h2 {
+  font-size: 22px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2c2d36;
+}
+
+.handList .item,
+.gearList .item {
+  display: flex;
+  flex-direction: column !important;
+  width: 276px;
+  margin: 0 15px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fdffff;
+  box-shadow: 0 0 10px rgb(228, 228, 228);
+}
+
+.handList .item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  background-color: #44df66;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.gearList .item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  background-color: #57d9eb;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.handList .item .footerItem .iconList,
+.gearList .item .footerItem .iconList {
+  width: 20px;
+  height: 20px;
+}
+
+.handList .list,
+.gearList .list {
+  display: flex;
+  flex-direction: row !important;
+}
+
+.handList .list .item:first-child,
+.gearList .list .item:first-child {
+  margin: 0;
+}
+
+.gearList .list .item .imageItem {
+  width: 100%;
+  height: 100%;
+}
+
+.gearList .item .footerItem,
+.handList .item .footerItem {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 8px;
+  padding: 0 10px;
+}

@@ -1,0 +1,187 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sidebar {
+  background: #adb9ca;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER SIDEBAR */
+
+.headerSidebar .logo {
+  width: 136.59px;
+  height: 40px;
+  margin: 24px 127px 0 24px;
+}
+
+.headerSidebar a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #242a35;
+  margin: 48px 24px 0 24px;
+  border-bottom: 1px solid #242a35;
+}
+
+.headerSidebar a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+/* MENU SIDEBAR */
+
+.menuSidebar .headMenu {
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin: 30px 24px 0;
+}
+
+.menuSidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menuSidebar ul li:first-child {
+  background: linear-gradient(
+    90deg,
+    rgba(74, 104, 119, 0.4) 0%,
+    rgba(74, 104, 119, 0.14) 100%
+  );
+  backdrop-filter: blur(26px);
+}
+
+.menuSidebar ul li:first-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 55%;
+  background: #242a35;
+  border-radius: 0px 2px 2px 0px;
+}
+
+.menuSidebar ul li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: #242a35;
+  opacity: 0.4;
+}
+
+.menuSidebar ul li {
+  padding: 0 25px;
+  position: relative;
+  margin: 4px 0;
+}
+
+.menuSidebar ul li a {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #242a35;
+}
+
+.menuSidebar ul li a img:last-child {
+  margin-left: auto;
+}
+
+.menuSidebar ul li a p {
+  margin: 0 0 0 16px;
+  padding: 15px 0;
+}
+
+/* FOOTER SIDEBAR */
+
+.footerSidebar {
+  margin-top: auto;
+}
+
+.footerSidebar .upgradeBanner {
+  width: 80%;
+  height: 125px;
+  background: linear-gradient(95.01deg, #242a35 -4.53%, #45546a 103.81%);
+  opacity: 0.75;
+  border-radius: 8px;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+}
+
+.footerSidebar .upgradeBanner p {
+  margin: 0;
+}
+
+.footerSidebar .upgradeBanner span {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footerSidebar .upgradeBanner img {
+  margin-left: 10px;
+}
+
+.footerSidebar .upgradeBanner button {
+  width: 206px;
+  height: 44px;
+  background: #fbfcff;
+  margin: 15px auto 0;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.footerSidebar .errorText {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+.footerSidebar .errorText p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4d5562;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.footerSidebar .errorText img {
+  width: 18px;
+  height: 19.5px;
+}
